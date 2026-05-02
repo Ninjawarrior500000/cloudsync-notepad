@@ -43,7 +43,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (token) fetchNotes(); // eslint-disable-line react-hooks/exhaustive-deps
+    if (token) fetchNotes();
   }, [token]);
 
   // 🔐 Signup / Login
