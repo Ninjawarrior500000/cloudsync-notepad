@@ -42,9 +42,8 @@ function App() {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (token) fetchNotes();
+    if (token) fetchNotes(); // eslint-disable-line react-hooks/exhaustive-deps
   }, [token]);
 
   // 🔐 Signup / Login
