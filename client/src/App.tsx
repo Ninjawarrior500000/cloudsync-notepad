@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://cloudsync-notepad-backend.onrender.com/api";
 
 interface Note {
   _id: string;
