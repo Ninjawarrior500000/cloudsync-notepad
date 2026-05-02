@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app-title {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Auth Page */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+}
+
+.auth-box {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-box h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.auth-box h2 {
+  text-align: center;
+  color: #555;
+}
+
+.switch-auth {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.switch-auth span {
+  color: #3498db;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.switch-auth span:hover {
+  text-decoration: underline;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+  background: white;
+}
+
+/* Form */
+.form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.form h2 {
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus, .textarea:focus {
+  border-color: #3498db;
+}
+
+.textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn:hover { opacity: 0.85; }
+.btn.create { background-color: #2ecc71; color: white; }
+.btn.save   { background-color: #3498db; color: white; }
+.btn.cancel { background-color: #95a5a6; color: white; }
+.btn.edit   { background-color: #f39c12; color: white; }
+.btn.delete { background-color: #e74c3c; color: white; }
+
+/* Notes Grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-card h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.note-card p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.note-date {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 1rem;
+  grid-column: 1 / -1;
+}
